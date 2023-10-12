@@ -15,7 +15,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 public class MasterRestClient {
 
     @Value("${secondary}")
-    List<String> nodeList;
+    private List<String> nodeList;
 
     private RestTemplate restTemplate = new RestTemplate();
 

@@ -1,6 +1,6 @@
 master:
   active: false
-  server: 127.0.0.1
+  server: http://127.0.0.1
   port: 8081
 server:
   port: 8082
