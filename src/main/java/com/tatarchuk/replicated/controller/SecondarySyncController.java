@@ -1,6 +1,7 @@
 package com.tatarchuk.replicated.controller;
 
 import com.tatarchuk.replicated.service.MessageService;
+import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -15,6 +16,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 @Slf4j
 @ConditionalOnProperty(prefix = "master", name = "active", havingValue = "false")
 @RestController
+@AllArgsConstructor
 @RequestMapping("/api/v1/sync")
 public class SecondarySyncController {
 
