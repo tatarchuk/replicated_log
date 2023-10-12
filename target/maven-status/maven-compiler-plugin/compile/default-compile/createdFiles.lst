@@ -1,0 +1,3 @@
+com/tatarchuk/replicated/Application.class
+com/tatarchuk/replicated/controller/SecondaryMessageController.class
+com/tatarchuk/replicated/controller/MasterMessageController.class

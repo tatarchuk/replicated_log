@@ -1,0 +1,8 @@
+master:
+  active: true
+secondary:
+  - localhost:8082
+  - localhost:8083
+  - localhost:8084
+server:
+  port: 8081
