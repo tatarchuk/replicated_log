@@ -2,6 +2,7 @@ package com.tatarchuk.replicated.controller;
 
 import com.tatarchuk.replicated.service.MessageService;
 import com.tatarchuk.replicated.service.SyncService;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 
 @Slf4j
 @ConditionalOnProperty(prefix = "master", name = "active", havingValue =  "true")
+@AllArgsConstructor
 @RestController
 @RequestMapping("/api/v1/message")
 public class MasterMessageController {
