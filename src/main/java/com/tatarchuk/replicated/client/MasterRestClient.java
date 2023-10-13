@@ -22,7 +22,7 @@ public class MasterRestClient {
     private RestTemplate restTemplate = new RestTemplate();
 
     public List<ResponseEntity> postMessageToAllSecondaryNodes(String message) {
-        return nodeList.stream()
+        return nodeList.parallelStream()
                 .map(node -> postMessageToSecondaryNode(node, message))
                 .toList();
     }
